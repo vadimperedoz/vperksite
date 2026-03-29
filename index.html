@@ -11,82 +11,120 @@
             margin: 0;
             padding: 20px;
         }
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            display: table;
+        }
+        .left-menu, .right-menu {
+            display: table-cell;
+            width: 120px;
+            vertical-align: top;
+            padding: 15px;
+            /* Полупрозрачный белый фон — прозрачность только для фона */
+            background: rgba(255, 255, 255, 0.9);
+            /* Поддержка старых браузеров */
+            filter: alpha(opacity=90);
+            /* Отступы от основного блока */
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+        .content {
+            display: table-cell;
+            width: 500px;
+            padding: 20px;
+            background-color: #FFFFFF;
+            opacity: 0.95;
+        }
+        .footer {
+            background: rgba(255, 255, 255, 0.9);
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+            /* Поддержка старых браузеров */
+            filter: alpha(opacity=90);
+        }
     </style>
 </head>
 <body text="#000080" link="#FF0000" vlink="#800080">
-    <table width="600" border="0" align="center" cellpadding="10" bgcolor="#FFFFFF" style="opacity: 0.95;">
-        <tr>
-            <td>
-                <!-- Шапка -->
-                <h1 align="center"><font face="Arial, Helvetica, sans-serif" size="+2">Вэлком ту клаб бэйби!</font></h1>
-                <hr>
-
-                <!-- Фото и приветствие -->
-                <table width="100%" border="0">
-                    <tr>
-                        <td width="30%" align="center">
-                            <img src="https://i.ibb.co/QvqDVhLD/5305522605278303171-119.jpg" alt="Моё фото с Жигулями" border="2" width="150" height="200">
-                        </td>
-                        <td width="70%">
-                            <font face="Verdana, Arial, Helvetica, sans-serif" size="3">
-                                Это моя <b>страничка</b>.<br>
-                                Я крутой и у меня есть фото с жигулями.
-                            </font>
-                </td>
-            </tr>
-        </table>
-
-        <br>
-
-        <!-- Контакты -->
-        <font face="Arial, Helvetica, sans-serif" size="3">
-            <b>Контакты:</b><br>
-            E-mail: <a href="mailto:vadimperedoz@gmail.com">vadimperedoz@gmail.com</a><br>
-            ТГ: <a href="https://t.me/vadimnew37" target="_blank">клик</a><br>
-            Город: Жодино Сити
-        </font>
-
-        <br><br>
-
-      
-        <hr>
-
-        <!-- Разделы -->
-        <a name="about"></a>
-        <h2>Обо мне</h2>
-        <font face="Times New Roman, serif" size="3">
-            Меня зовут Вадим, я живу в Жодино Сити. Учусь в Борисовском колхозе.<br><br>
-            Люблю играть на гитаре и слушать:<br>
-            • ГрОб<br>
-            • СоС<br>
-            • Янка<br>
-            • Порвана<br>
-            • Алексея Вишню<br>
-            •<a href="albums.html">Мои любимые альбомы</a>
-        </font>
-
-        <br><br>
-
-        <a name="links"></a>
-        <h2>Полезные ссылки</h2>
-        <font face="Arial, Helvetica, sans-serif" size="2">
-            <a href="https://t.me/vperedixik" target="_blank">Мой ТГК</a> — помойка<br>
-            <a href="https://www.tiktok.com/@vperedozik?_r=1&_t=ZS-9520lCifCbf" target="_blank">Мой ТТ</a> — более популярная помойка<br>
-            <a href="https://openvk.org/vadimperedoz" target="_blank">Мой ОВК</a> — не помойка
-        </font>
-
-        <br><br>
-
-        <!-- Подвал -->
-        <hr>
-        <div align="center">
-            <font face="Arial" size="1" color="#666666">
-                © 2026 Вадим Передоз. Все права защищены.<br>
-                Сайт создан с любовью к Web 1.0 и вишнёвым ручкам для сковородок
+    <div class="container">
+        <!-- Левое меню (у края страницы) -->
+        <div class="left-menu">
+            <font face="Arial, Helvetica, sans-serif" size="3">
+                <b>Меню</b><br><br>
+                <a href="albums.html">Мои любимые альбомы</a><br><br>
+                <a href="photo.html">Фото</a>
             </font>
         </div>
-    </td>
-</tr>
-</table>
+
+        <!-- Основной контент -->
+        <div class="content">
+            <h1 align="center"><font face="Arial, Helvetica, sans-serif" size="+2">Вэлком ту клаб бэйби!</font></h1>
+            <hr>
+
+            <!-- Фото и приветствие -->
+            <table width="100%" border="0">
+                <tr>
+                    <td width="30%" align="center">
+                        <img src="https://i.ibb.co/QvqDVhLD/5305522605278303171-119.jpg" alt="Моё фото с Жигулями" border="2" width="150" height="200">
+            </td>
+            <td width="70%">
+                <font face="Verdana, Arial, Helvetica, sans-serif" size="3">
+                    Это моя <b>страничка</b>.<br>
+            Я крутой и у меня есть фото с жигулями.
+                </font>
+            </td>
+        </tr>
+    </table>
+
+    <br>
+
+    <!-- Контакты -->
+    <font face="Arial, Helvetica, sans-serif" size="3">
+        <b>Контакты:</b><br>
+        E-mail: <a href="mailto:vadimperedoz@gmail.com">vadimperedoz@gmail.com</a><br>
+        ТГ: <a href="https://t.me/vadimnew37" target="_blank">клик</a><br>
+        Город: Жодино Сити
+    </font>
+
+    <br><br>
+
+    <hr>
+
+    <!-- Обо мне -->
+    <a name="about"></a>
+    <h2>Обо мне</h2>
+    <font face="Times New Roman, serif" size="3">
+        Меня зовут Вадим, я живу в Жодино Сити. Учусь в Борисовском колхозе.<br><br>
+        Люблю играть на гитаре и слушать:<br>
+        • ГрОб<br>
+        • СоС<br>
+        • Янка<br>
+        • Порвана<br>
+        • Алексея Вишню
+    </font>
+</div>
+
+<!-- Правое меню (у края страницы) -->
+<div class="right-menu">
+    <font face="Arial, Helvetica, sans-serif" size="3">
+        <b>Полезные ссылки</b><br><br>
+        <a href="https://t.me/vperedixik" target="_blank">Мой ТГК</a> — помойка<br><br>
+        <a href="https://www.tiktok.com/@vperedozik?_r=1&_t=ZS-9520lCifCbf" target="_blank">Мой ТТ</a> — более популярная помойка<br><br>
+        <a href="https://openvk.org/vadimperedoz" target="_blank">Мой ОВК</a> — не помойка
+    </font>
+</div>
+</div>
+
+<br><br>
+<hr>
+<!-- Подвал с прозрачным фоном -->
+<div class="footer">
+    <font face="Arial" size="1" color="#666666">
+        © 2026 Вадим Передоз. Все права защищены.<br>
+        Сайт создан с любовью к Web 1.0 и вишнёвым ручкам для сковородок
+    </font>
+</div>
 </body>
 </html>
