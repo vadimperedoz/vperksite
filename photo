@@ -1,0 +1,96 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Моя фотогалерея</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+    <style>
+        body {
+            background-image: url('https://grob-hroniki.org/img/other/original/1990_ps/ps_01.jpg');
+            background-repeat: repeat;
+            background-attachment: fixed;
+            margin: 0;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body text="#000080" link="#FF0000" vlink="#800080">
+    <table width="600" border="0" align="center" cellpadding="10" bgcolor="#FFFFFF" style="opacity: 0.95;">
+        <tr>
+            <td>
+                <!-- Шапка -->
+                <h1 align="center"><font face="Arial, Helvetica, sans-serif" size="+2">Моя фотогалерея</font></h1>
+                <hr>
+
+                <!-- Навигация -->
+                <div align="center">
+                    <font face="Arial, Helvetica, sans-serif" size="3">
+                        <a href="index.html">Главная</a>
+                       
+            </font>
+        </div>
+
+        <br><hr><br>
+
+        <!-- Галерея из 10 фото с заглушками -->
+        <table width="100%" border="0" cellspacing="10">
+            <tr>
+                <td align="center" width="33%">
+                    <img src="https://i.ibb.co/yFZxRfZF/5296620319185955548-121.jpg" alt="Фото 1" border="2" width="200" height="150"><br>
+            <font size="2">Фото №1</font>
+        </td>
+        <td align="center" width="33%">
+            <img src="https://i.ibb.co/JwQFtkmt/5463401557220070066-119.jpg" alt="Фото 2" border="2" width="200" height="150"><br>
+            <font size="2">Фото №2</font>
+        </td>
+        <td align="center" width="33%">
+            <img src="https://i.ibb.co/Gv1wsG91/5427198513377905789-119.jpg" alt="Фото 3" border="2" width="200" height="150"><br>
+            <font size="2">Фото №3</font>
+        </td>
+    </tr>
+    <tr>
+        <td align="center">
+            <img src="https://i.ibb.co/pv9ZpgW4/5375082035883477855-119.jpg" alt="Фото 4" border="2" width="150" height="200"><br>
+            <font size="2">Фото №4</font>
+        </td>
+        <td align="center">
+            <img src="https://i.ibb.co/NdX83G9G/5312516701821802235-119.jpg" alt="Фото 5" border="2" width="150" height="200"><br>
+            <font size="2">Фото №5</font>
+        </td>
+        <td align="center">
+            <img src="https://i.ibb.co/ZzNZgKy7/5282871927011742811-121.jpg" alt="Фото 6" border="2" width="200" height="150"><br>
+            <font size="2">Фото №6</font>
+        </td>
+    </tr>
+    <tr>
+        <td align="center">
+            <img src="https://i.ibb.co/zWzcr6PR/5233356382927525670-121.jpg" alt="Фото 7" border="2" width="150" height="200"><br>
+            <font size="2">Фото №7</font>
+        </td>
+        <td align="center">
+            <img src="https://i.ibb.co/9k2PQPcj/5325637079586782008-121.jpg" alt="Фото 8" border="2" width="150" height="200"><br>
+            <font size="2">Фото №8</font>
+        </td>
+        <td align="center">
+            <img src="https://i.ibb.co/TMCm9R9m/5337004582413996339-121.jpg" alt="Фото 9" border="2" width="150" height="200"><br>
+            <font size="2">Фото №9</font>
+        </td>
+    </tr>
+    <tr>
+
+</table>
+
+<br><br>
+
+<!-- Подвал -->
+<hr>
+<div align="center">
+    <font face="Arial" size="1" color="#666666">
+        © 2024 Вадим Передоз. Все права защищены.<br>
+        Сайт создан с любовью к Web 1.0 и вишнёвым ручкам для сковородок
+    </font>
+</div>
+</td>
+</tr>
+</table>
+</body>
+</html>
