@@ -124,6 +124,95 @@
         <a href="https://openvk.org/vadimperedoz" target="_blank">Мой ОВК</a><br><br>
         <a href="https://steamcommunity.com/profiles/76561199219783656/" target="_blank">Мой Стим</a><br><br>
          <a href="https://t.me/vadimnew37" target="_blank">Мой ТГ</a><br><br>
+        <div class="calendar-clock-widget" style="
+    width: 300px;
+    border: 2px solid #000080;
+    background: #f0f8ff;
+    padding: 15px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    border-radius: 8px;
+">
+    <div class="date-display" style="
+        font-size: 18px;
+        font-weight: bold;
+        color: #000080;
+        margin-bottom: 10px;
+    ">
+        <span id="current-date">Загрузка даты...</span>
+    </div>
+
+    <div class="time-display" style="
+        font-size: 24px;
+        font-weight: bold;
+        color: #ff0000;
+        margin-bottom: 15px;
+        background: #e6e6fa;
+        padding: 8px;
+        border-radius: 4px;
+    ">
+        <span id="current-time">00:00:00</span>
+    </div>
+
+    <div class="weekday-display" style="
+        font-size: 14px;
+        color: #666;
+        margin-bottom: 10px;
+    ">
+        <span id="current-weekday">Загрузка дня недели...</span>
+    </div>
+
+    <div style="
+        font-size: 12px;
+        color: #888;
+        border-top: 1px dashed #ccc;
+        padding-top: 8px;
+    ">
+        Виджет календаря и часов
+    </div>
+</div>
+
+<script>
+function updateDateTime() {
+    const now = new Date();
+
+    // Массив дней недели на русском
+    const weekdays = [
+        'Воскресенье', 'Понедельник', 'Вторник',
+        'Среда', 'Четверг', 'Пятница', 'Суббота'
+    ];
+
+    // Массив месяцев на русском
+    const months = [
+        'января', 'февраля', 'марта', 'апреля', 'мая', 'июня',
+        'июля', 'августа', 'сентября', 'октября', 'ноября', 'декабря'
+    ];
+
+    // Получаем компоненты даты
+    const day = now.getDate();
+    const month = now.getMonth();
+    const year = now.getFullYear();
+    const weekday = weekdays[now.getDay()];
+    const hours = String(now.getHours()).padStart(2, '0');
+    const minutes = String(now.getMinutes()).padStart(2, '0');
+    const seconds = String(now.getSeconds()).padStart(2, '0');
+
+    // Форматируем дату
+    const formattedDate = `${day} ${months[month]} ${year}`;
+
+    // Обновляем элементы на странице
+    document.getElementById('current-date').textContent = formattedDate;
+    document.getElementById('current-time').textContent = `${hours}:${minutes}:${seconds}`;
+    document.getElementById('current-weekday').textContent = weekday;
+}
+
+// Обновляем время каждую секунду
+setInterval(updateDateTime, 1000);
+
+// Инициализируем сразу при загрузке
+window.onload = updateDateTime;
+</script>
+
     </font>
 </div>
 </div>
